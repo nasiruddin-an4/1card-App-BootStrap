@@ -1227,10 +1227,10 @@ body {
 .btn4 {
     background: white;
     /* gradient depth */
-    color: #fff;
-    border: none;
+    color: salmon;
+    border: 1px solid salmon;
     border-radius: 50px;
-    padding: 10px 60px;
+    padding: 5px 40px;
     font-weight: 600;
     letter-spacing: 0.3px;
     transition: all 0.3s ease;
