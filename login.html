@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Card APP Web</title>
+
+    <!-- Remix Icon CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+
+    <!-- User Login Section -->
+    <div class="loginSection">
+        <div class="container">
+            <div class="login-container d-flex align-items-center justify-content-center">
+                <div class="login-card">
+                    <!-- Logo Section -->
+                    <div class="logo-section text-center mb-4">
+                        <img src="img/logo.png" alt="">
+                    </div>
+
+                    <!-- Tab Section -->
+                    <div class="tab-section">
+                        <div class="d-flex custom-tabs">
+                            <button class="custom-tab active" onclick="switchTab('user', event)">User</button>
+                            <button class="custom-tab" onclick="switchTab('guardian', event)">Guardian</button>
+                        </div>
+                    </div>
+
+                    <!-- Form Section -->
+                    <div class="form-section">
+                        <div class="tab-content">
+                            <!-- User Login Form -->
+                            <div id="user-form" class="tab-pane active">
+                                <h4 class="form-title">Login</h4>
+                                <p class="form-text">into your 1Card account</p>
+
+                                <form>
+                                    <div class="mb-4">
+                                        <label for="user-email" class="form-label">Email or Username</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="ri-mail-line"></i></span>
+                                            <input type="text" class="form-control" id="user-email"
+                                                placeholder="Enter Your Email">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="user-password" class="form-label">Password</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="ri-lock-line"></i></span>
+                                            <input type="password" class="form-control" id="user-password"
+                                                placeholder="Enter password">
+                                            <span class="input-group-text password-toggle"
+                                                onclick="togglePassword('user-password')">
+                                                <i class="ri-eye-line"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <a href="StudentDashboard.html" class="btn mb-5"><i class="ri-login-circle-line me-2"></i>Login</a>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <a href="ForgotPassword.html" class="btn2">Forgot Password?</a>
+                                        <a href="Registration.html" class="btn3">Registration</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Guardian Login Form -->
+                            <div id="guardian-form" class="tab-pane">
+                                <h4 class="form-title">Guardian Signin</h4>
+                                <p class="form-text">into your 1Card account using DIU student ID </p>
+
+                                <form>
+                                    <div class="mb-4">
+                                        <label for="guardian-student-id" class="form-label">Student ID</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="ri-id-card-line"></i></span>
+                                            <input type="text" class="form-control" id="guardian-student-id"
+                                                placeholder="Enter Student ID">
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="btn"><i class="ri-shield-user-line me-2"></i>Guardian Login</a>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="copyRight">
+                        <p>@ Daffodil Computers Limited</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

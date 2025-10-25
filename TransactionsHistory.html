@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Transactions || 1 Card APP Web</title>
+
+    <!-- Remix Icon CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+
+
+
+
+    <!--Profile Section -->
+    <div class="profileSection">
+        <div class="container">
+            <!-- Header Top Section -->
+            <div
+                class="profileHeard d-flex justify-content-between align-items-center text-white bg-primary p-2 rounded-top">
+                <div>
+                    <a href="StudentDashboard.html" class="text-decoration-none text-white">
+                        <i class="ri-arrow-left-line fs-4"></i>
+                    </a>
+                </div>
+                <div>
+                    <p class="mb-0 fw-bold">Transactions</p>
+                </div>
+                <div>
+                    <a href="StudentDashboard.html"><img src="img/logo.png" alt="Logo" class="topLogo"
+                            style="height: 35px;"></a>
+                </div>
+            </div>
+
+            <!-- Transactions History Section -->
+            <div class="profile-card mt-4 px-4">
+                <div class="mb-4 TransactionsHistory">
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs justify-content-between border-bottom mt-4" id="transactionTabs"
+                        role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fw-semibold" id="history-tab" data-bs-toggle="tab"
+                                data-bs-target="#history" type="button" role="tab">
+                                Transactions History
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-semibold" id="summary-tab" data-bs-toggle="tab"
+                                data-bs-target="#summary" type="button" role="tab">
+                                Date Wise Transactions Summary
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- Filter Buttons -->
+                    <div class="d-flex align-items-center justify-content-between gap-3 py-3 border-bottom">
+                        <span class="fw-semibold text-muted">Filter By :</span>
+                        <div class="d-flex gap-4">
+                            <button class="btn active">Recharge</button>
+                            <button class="btn4">Pay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="tab-content p-3" id="transactionTabsContent">
+                    <!-- Transaction History -->
+                    <div class="tab-pane fade show active" id="history" role="tabpanel">
+
+                        <!-- Transaction Item -->
+                        <div class="d-flex justify-content-between align-items-center border-bottom py-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="icon bg-light p-2 rounded">
+                                    <i class="ri-exchange-funds-line fs-3 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1 fw-semibold">Tuition Fees</h6>
+                                    <p class="mb-0 text-muted small">ssl commerce</p>
+                                    <p class="mb-0 text-muted small">07:16 pm 03/02/24</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-danger fw-semibold mb-0">৳ 37,500</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center border-bottom py-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="icon bg-light p-2 rounded">
+                                    <i class="ri-exchange-funds-line fs-3 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1 fw-semibold">Tuition Fees</h6>
+                                    <p class="mb-0 text-muted small">ssl commerce</p>
+                                    <p class="mb-0 text-muted small">07:16 pm 03/02/24</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-danger fw-semibold mb-0">৳ 37,500</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center border-bottom py-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="icon bg-light p-2 rounded">
+                                    <i class="ri-exchange-funds-line fs-3 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1 fw-semibold">Recharge</h6>
+                                    <p class="mb-0 text-muted small">surjopay</p>
+                                    <p class="mb-0 text-muted small">08:10 pm 03/02/24</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-success fw-semibold mb-0">৳ 37,500</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Summary Tab -->
+                    <div class="tab-pane fade" id="summary" role="tabpanel">
+                        <div class="p-3 border rounded bg-light">
+                            <p class="mb-0 text-center text-muted">Date Wise Summary Coming Soon...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- copyRight -->
+            <div class="copyRight text-center mt-3 mb-2 text-muted small">
+                <p>@ Daffodil Computers Limited</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Edit Profile Modal -->
+    <div class="modal fade" id="editProfileModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow">
+                <div class="modal-header bg-primary text-white rounded-top-4">
+                    <h5 class="modal-title">Edit Profile</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editProfileForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" value="Asif Mahmud Akash">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">ID</label>
+                                <input type="text" class="form-control" value="181-16-251">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" value="asif16-25@diu.edu.bd">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone</label>
+                                <input type="text" class="form-control" value="01756987423">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Father’s Name</label>
+                                <input type="text" class="form-control" value="Abdul Alim">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Mother’s Name</label>
+                                <input type="text" class="form-control" value="Mariom Begum">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" value="1998-12-04">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Blood Group</label>
+                                <input type="text" class="form-control" value="A+">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Address</label>
+                                <textarea class="form-control" rows="2">Sukrabad, Dhanmondi, Dhaka.</textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" form="editProfileForm" class="btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

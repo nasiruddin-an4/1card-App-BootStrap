@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password || 1 Card APP Web</title>
+
+    <!-- Remix Icon CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+
+
+    <!-- Education Fees Section -->
+    <div class="loginSection">
+        <div class="container">
+            <div class="login-container d-flex align-items-center justify-content-center">
+                <div class="forgot-card">
+                    <!-- Header Top Section  -->
+                    <div class="cardHeard d-flex justify-content-between">
+                        <div><a href="StudentDashboard.html" class="text-decoration-none text-white"><i
+                                    class="ri-arrow-left-line"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <p>Fund Transfer</p>
+                        </div>
+                        <div>
+                            <img src="img/logo.png" alt="Logo" class="topLogo">
+                        </div>
+                    </div>
+
+                    <!-- Fund Transfer -->
+                    <div class="EducationCard mb-4">
+                        <div>
+                            <!-- Search Fund Transfer Type -->
+                            <div class="SearchFees mb-4">
+                                <label for="searchFees" class="form-label fw-bold">Account Number</label>
+                                <div class="SearchFeesinput-group d-flex align-items-center">
+                                    <input type="text" class="form-control" id="searchFees"
+                                        placeholder="Enter Account Number">
+                                    <a href="#">
+                                        <i class="ri-arrow-right-line fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- QR Code Section -->
+                            <div
+                                class="qr-section text-center mt-5 mx-auto p-2 d-flex flex-column align-items-center justify-content-center">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=account%3D123456789"
+                                    alt="QR Code" class="qr-image mb-2">
+                                <p class="small mb-0">Tap to Scan QR Code</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fund Transfer End -->
+
+
+
+
+                    <div class="copyRight">
+                        <p>@ Daffodil Computers Limited</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

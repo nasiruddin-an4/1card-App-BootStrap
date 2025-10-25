@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Profile || 1 Card APP Web</title>
+
+    <!-- Remix Icon CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+
+
+
+
+    <!--Profile Section -->
+    <div class="profileSection">
+        <div class="container">
+            <!-- Header Top Section -->
+            <div
+                class="profileHeard d-flex justify-content-between align-items-center text-white bg-primary p-2 rounded-top">
+                <div>
+                    <a href="StudentDashboard.html" class="text-decoration-none text-white">
+                        <i class="ri-arrow-left-line fs-4"></i>
+                    </a>
+                </div>
+                <div>
+                    <p class="mb-0 fw-bold">Profile</p>
+                </div>
+                <div>
+                    <a href="StudentDashboard.html"><img src="img/logo.png" alt="Logo" class="topLogo"
+                            style="height: 35px;"></a>
+                </div>
+            </div>
+
+            <!-- Student Profile -->
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img src="img/asif.png" alt="Profile Picture" />
+                    <h5>Asif Mahmud Akash</h5>
+                    <p>asif16-25@diu.edu.bd</p>
+                    <button class="edit-btn" data-bs-toggle="modal" data-bs-target="#editProfileModal">
+                        <i class="ri-edit-line me-1"></i>Edit Profile
+                    </button>
+                </div>
+
+                <!-- Profile Info -->
+                <div class="p-4">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <i class="ri-user-3-line"></i>
+                                <div>
+                                    <h6>Name</h6>
+                                    <p>Asif Mahmud Akash</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <i class="ri-id-card-line"></i>
+                                <div>
+                                    <h6>ID</h6>
+                                    <p>181-16-251</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <i class="ri-mail-line"></i>
+                                <div>
+                                    <h6>Email</h6>
+                                    <p>asif16-25@diu.edu.bd</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <i class="ri-phone-line"></i>
+                                <div>
+                                    <h6>Phone</h6>
+                                    <p>01756987423</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <i class="ri-user-2-line"></i>
+                                <div>
+                                    <h6>Father’s Name</h6>
+                                    <p>Abdul Alim</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <i class="ri-user-heart-line"></i>
+                                <div>
+                                    <h6>Mother’s Name</h6>
+                                    <p>Mariom Begum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <i class="ri-calendar-line"></i>
+                                <div>
+                                    <h6>Date of Birth</h6>
+                                    <p>04/12/1998</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <i class="ri-drop-line"></i>
+                                <div>
+                                    <h6>Blood Group</h6>
+                                    <p>A+</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="info-item">
+                                <i class="ri-map-pin-line"></i>
+                                <div>
+                                    <h6>Address</h6>
+                                    <p>Sukrabad, Dhanmondi, Dhaka.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- copyRight -->
+            <div class="copyRight text-center mt-3 mb-2 text-muted small">
+                <p>@ Daffodil Computers Limited</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Edit Profile Modal -->
+    <div class="modal fade" id="editProfileModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow">
+                <div class="modal-header bg-primary text-white rounded-top-4">
+                    <h5 class="modal-title">Edit Profile</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editProfileForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" value="Asif Mahmud Akash">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">ID</label>
+                                <input type="text" class="form-control" value="181-16-251">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" value="asif16-25@diu.edu.bd">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone</label>
+                                <input type="text" class="form-control" value="01756987423">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Father’s Name</label>
+                                <input type="text" class="form-control" value="Abdul Alim">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Mother’s Name</label>
+                                <input type="text" class="form-control" value="Mariom Begum">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" value="1998-12-04">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Blood Group</label>
+                                <input type="text" class="form-control" value="A+">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Address</label>
+                                <textarea class="form-control" rows="2">Sukrabad, Dhanmondi, Dhaka.</textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" form="editProfileForm" class="btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

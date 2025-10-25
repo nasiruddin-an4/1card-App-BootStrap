@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password || 1 Card APP Web</title>
+
+    <!-- Remix Icon CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+
+
+    <!-- Top Up Section -->
+    <div class="loginSection">
+        <div class="container">
+            <div class="login-container d-flex align-items-center justify-content-center">
+                <div class="forgot-card">
+                    <!-- Header Top Section  -->
+                    <div class="cardHeard d-flex justify-content-between">
+                        <div><a href="StudentDashboard.html" class="text-decoration-none text-white"><i
+                                    class="ri-arrow-left-line"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <p>Top Up</p>
+                        </div>
+                        <div>
+                            <a href="StudentDashboard.html"><img src="img/logo.png" alt="Logo" class="topLogo"></a>
+                        </div>
+                    </div>
+
+                    <!-- Top Up -->
+                    <div class="EducationCard mb-4">
+                        <div>
+                            <!-- Search Top Up Type -->
+                            <div class="SearchFees mb-4">
+                                <label for="searchFees" class="form-label fw-bold">Search Name/Number</label>
+                                <div class="SearchFeesinput-group d-flex align-items-center">
+                                    <input type="text" class="form-control" id="searchFees"
+                                        placeholder="Enter Name/Number">
+                                    <a href="#">
+                                        <i class="ri-arrow-right-line fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="section-title">My Number</div>
+                            <div class="contact-card" onclick="openPopup('Asif Mahmud Akash','01764912323')">
+                                <div class="contact-initial" style="background-color: #ffc107;">A</div>
+                                <div class="contact-info">
+                                    <p class="name">Asif Mahmud Akash</p>
+                                    <p class="number">01764912323</p>
+                                </div>
+                            </div>
+
+                            <div class="section-title">Recent</div>
+                            <div class="contact-card" onclick="openPopup('Mahabub Islam','01764912326')">
+                                <div class="contact-initial" style="background-color: #6c757d;">M</div>
+                                <div class="contact-info">
+                                    <p class="name">Mahabub Islam</p>
+                                    <p class="number">01764912326</p>
+                                </div>
+                            </div>
+                            <div class="contact-card" onclick="openPopup('Shahidur Shawon','01764916558')">
+                                <div class="contact-initial" style="background-color: #9c27b0;">S</div>
+                                <div class="contact-info">
+                                    <p class="name">Shahidur Shawon</p>
+                                    <p class="number">01764916558</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Popup -->
+                        <div class="popup-overlay container" id="popupOverlay">
+                            <div class="popup">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <div class="popup-text">
+                                        <h5 class="mb-1">Select Operator</h5>
+                                        <p>Choose the current operator for this number</p>
+                                    </div>
+
+                                    <div class="close-popup text-danger" onclick="closePopup()">Cancel</div>
+                                </div>
+
+                                <div class="operator-list">
+                                    <div class="operator" onclick="selectOperator('Airtel')">
+                                        <img src="img/airtel.png" alt="Airtel" />
+                                    </div>
+                                    <div class="operator" onclick="selectOperator('Banglalink')">
+                                        <img src="img/banglalink.webp" alt="Banglalink" />
+                                    </div>
+                                    <div class="operator" onclick="selectOperator('Grameenphone')">
+                                        <img src="img/gp.jpg" alt="Grameenphone" />
+                                    </div>
+                                    <div class="operator" onclick="selectOperator('Robi')">
+                                        <img src="img/robi.png" alt="Robi" />
+                                    </div>
+                                    <div class="operator" onclick="selectOperator('Skitto')">
+                                        <img src="img/skitto.png" alt="Skitto" />
+                                    </div>
+                                    <div class="operator" onclick="selectOperator('Teletalk')">
+                                        <img src="img/TeleTalk.svg" alt="Teletalk" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- Fund Transfer End -->
+
+
+
+                    <div class="copyRight">
+                        <p>@ Daffodil Computers Limited</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+        let currentContact = { name: '', number: '' };
+
+        function openPopup(name, number) {
+            currentContact = { name, number };
+            document.getElementById('popupOverlay').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popupOverlay').style.display = 'none';
+        }
+
+        function selectOperator(operator) {
+            // Operator logos mapping
+            const operatorLogos = {
+                'Airtel': 'img/airtel.png',
+                'Banglalink': 'img/banglalink.webp',
+                'Grameenphone': 'img/gp.jpg',
+                'Robi': 'img/robi.png',
+                'Skitto': 'img/skitto.png',
+                'Teletalk': 'img/TeleTalk.svg'
+            };
+
+            // Get selected operator image
+            const operatorImg = operatorLogos[operator];
+
+            // Redirect to recharge page with name, number, and operator image only
+            const params = new URLSearchParams({
+                name: currentContact.name,
+                number: currentContact.number,
+                operatorImg: operatorImg
+            });
+
+            window.location.href = `recharge.html?${params.toString()}`;
+        }
+    </script>
+</body>
+
+</html>

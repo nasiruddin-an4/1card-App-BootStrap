@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge Amount || 1 Card APP Web</title>
+
+    <!-- Remix Icon CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+
+
+    <!-- Recharge Amount Section -->
+    <div class="loginSection">
+        <div class="container">
+            <div class="login-container d-flex align-items-center justify-content-center">
+                <div class="forgot-card">
+                    <!-- Header Top Section  -->
+                    <div class="cardHeard d-flex justify-content-between">
+                        <div><a href="Top-Up.html" class="text-decoration-none text-white"><i
+                                    class="ri-arrow-left-line"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <p>Mobile Top Up</p>
+                        </div>
+                        <div>
+                            <a href="StudentDashboard.html"><img src="img/logo.png" alt="Logo" class="topLogo"></a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Top Up -->
+                    <div class="EducationCard mb-4">
+                        <div class="container">
+                            <div class="info-box">
+                                <h2>Recipient</h2>
+                                <div class="contact-card">
+                                    <div class="contact-initial" style="background-color: #ffc107;">A</div>
+                                    <div class="contact-info d-flex justify-content-between">
+                                        <div>
+                                            <p><strong>Name:</strong> <span id="name"></span></p>
+                                            <p><strong>Number:</strong> <span id="number"></span></p>
+                                        </div>
+                                        <div>
+                                            <p><span id="operator"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ammountSection">
+                                <h3>Amount</h3>
+
+                                <div class="amount-list" id="amountList">
+                                    <div class="amount" onclick="selectAmount(20)">৳20</div>
+                                    <div class="amount" onclick="selectAmount(50)">৳50</div>
+                                    <div class="amount" onclick="selectAmount(100)">৳100</div>
+                                    <div class="amount" onclick="selectAmount(200)">৳200</div>
+                                    <div class="amount" onclick="selectAmount(500)">৳500</div>
+                                    <div class="amount" onclick="selectAmount(1000)">৳1000</div>
+                                </div>
+
+                                <!--  Available Balance -->
+                                <div class="balance-box">
+                                    <p><strong>Available Balance:</strong> <span id="balanceAmount">৳2500</span></p>
+                                </div>
+
+                                <!--  Enter Password Section -->
+                                <div class="password-box">
+                                    <label for="rechargePassword"><strong>Enter Password:</strong></label>
+                                    <input type="password" id="rechargePassword" placeholder="Enter your password" />
+                                </div>
+
+                                <button class="confirm-btn" onclick="confirmRecharge()">Confirm Recharge</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- Fund Transfer End -->
+
+
+
+                    <div class="copyRight">
+                        <p>@ Daffodil Computers Limited</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+        const number = params.get('number');
+        const operatorImg = params.get('operatorImg');
+
+        document.getElementById('name').textContent = name;
+        document.getElementById('number').textContent = number;
+
+        // Display operator image only
+        if (operatorImg) {
+            const img = document.createElement('img');
+            img.src = operatorImg;
+            img.alt = 'Operator';
+            img.style.width = '40px';
+            img.style.height = '40px';
+            img.style.objectFit = 'contain';
+            img.style.marginLeft = '10px';
+            img.style.verticalAlign = 'middle';
+            document.getElementById('operator').appendChild(img);
+        }
+    </script>
+</body>
+
+</html>
