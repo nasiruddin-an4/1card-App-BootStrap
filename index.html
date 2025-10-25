@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1Card - The Smart Card for Smart Campuses</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/CSS/landing.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+            <div class="container py-2">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo.png" alt="1Card Logo" width="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mainNavOffcanvas" aria-controls="mainNavOffcanvas" aria-label="Toggle navigation">
+                    <i class="ri-menu-3-line fs-2" style="color: var(--brand-blue-dark);"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center" style="font-weight: 500;">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Features
+                            </a>
+                            <ul class="dropdown-menu shadow-lg border-0 bg-white">
+                                <li><a class="dropdown-item" href="#">Expense Tracking</a></li>
+                                <li><a class="dropdown-item" href="#">Service Integration</a></li>
+                                <li><a class="dropdown-item" href="#">Payment Options</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <a href="login.html" class="btn ">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Offcanvas Menu for Mobile -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mainNavOffcanvas" aria-labelledby="mainNavOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title visually-hidden" id="mainNavOffcanvasLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+            <ul class="navbar-nav text-center" style="font-weight: 500;">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Features
+                    </a>
+                    <ul class="dropdown-menu bg-white ">
+                        <li><a class="dropdown-item text-dark" href="#">Expense Tracking</a></li>
+                        <li><a class="dropdown-item text-dark" href="#">Service Integration</a></li>
+                        <li><a class="dropdown-item text-dark" href="#">Payment Options</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <div class="mt-5 w-75">
+                <a href="#" class="btn btn-outline-light w-100">Login</a>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="mainSection">
+        <!-- Hero Section -->
+        <section class="hero-section position-relative overflow-hidden">
+            <div class="container text-center position-relative">
+                <div class="tag">1Card Campus Solutions</div>
+                <h1 class="fw-medium mb-4 display-4 mx-auto text-center" style="color: var(--brand-blue-dark); line-height: 1.2;">
+                    The Smart Card for Smart Campuses
+                    </h1>
+                <p class="lead text-secondary mx-auto mb-5" style="max-width: 42rem;">Transform your campus operations
+                    with a single, intelligent card that manages everything from printing and scanning to mobile
+                    recharges and bus fares, ensuring a smooth, connected experience.
+                </p>
+                <div class="d-flex justify-content-center align-items-center gap-4">
+                    <a href="#" class="btn btn-dark shadow-lg">Book a Demo</a>
+                    <a href="#" class="d-flex align-items-center text-decoration-none fw-bold"
+                        style="color: var(--brand-blue-dark);">
+                        <span class="bg-white p-2 rounded-circle shadow-sm me-3 d-inline-flex">
+                            <i class="ri-play-fill text-primary fs-5"></i>
+                        </span>
+                        Watch a video
+                    </a>
+                </div>
+                <div class=" d-flex justify-content-center">
+                    <img src="img/HomePage/Phone Image.avif" alt="1Card App on phone"
+                        class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="py-5 bg-white">
+            <div class="partners-container w-100 d-inline-flex flex-nowrap overflow-hidden">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled m-0 animate-infinite-scroll">
+                    <li class="mx-4">
+                        <img src="https://picsum.photos/seed/p1/120/40" alt="Daffodil International"
+                            class="object-fit-contain" style="height: 40px;">
+                        </li>
+                    <li class="mx-4">
+                        <img src="img/HomePage/2.avif" alt="Daffodil University"
+                            class="object-fit-contain" style="height: 40px;"></li>
+                    <li class="mx-4"><img src="img/HomePage/3.avif alt="SkiJobs"
+                            class="object-fit-contain" style="height: 40px;"></li>
+                    <li class="mx-4"><img src="img/HomePage/4.avif" alt="Daffodil Computers"
+                            class="object-fit-contain" style="height: 40px;"></li>
+                    <li class="mx-4"><img src="img/HomePage/5.avif" alt="Daffodil Smart City"
+                            class="object-fit-contain" style="height: 40px;"></li>
+                    <li class="mx-4"><img src="img/HomePage/6.avif" alt="Daffodil International School"
+                            class="object-fit-contain" style="height: 40px;"></li>
+                    <li class="mx-4"><img src="img/HomePage/7.avif" alt="Daffodil International"
+                            class="object-fit-contain" style="height: 40px;"></li>
+                    <li class="mx-4"><img src="img/HomePage/10.png" alt="Daffodil University"
+                            class="object-fit-contain" style="height: 40px;"></li>
+                    <li class="mx-4"><img src="img/HomePage/9.png" alt="SkiJobs"
+                            class="object-fit-contain" style="height: 40px;"></li>
+                    <li class="mx-4"><img src="img/HomePage/8.png" alt="Daffodil Computers"
+                            class="object-fit-contain" style="height: 40px;"></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section section-py">
+            <div class="overlay-bg"></div>
+            <div class="container position-relative">
+                <div class="text-center mx-auto mb-5" style="max-width: 48rem;">
+                    <div class="tag" style="background-color: var(--brand-yellow); color: var(--brand-blue-dark);">Card
+                        Campus Solutions</div>
+                    <h2 class="fw-semibold display-4 mb-3">Our Results in Numbers</h2>
+                    <p class="fs-5 text-white-50">Discover the real impact 1Card has made on campus management,
+                        security, and financial transactions across our growing community.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="stat-card">
+                            <h3 class="display-4 fw-bold mb-3">$1.6M+</h3>
+                            <p class="fs-5 fw-semibold text-white mb-2">in Total Digital Transactions Processed</p>
+                            <p class="text-white-50">Our secure payment infrastructure handles thousands of transactions
+                                daily, ensuring quick, cashless payments for students and staff.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="stat-card">
+                            <h3 class="display-4 fw-bold mb-3">80%</h3>
+                            <p class="fs-5 fw-semibold text-white mb-2">of Partner Campuses Reduce Overhead Costs</p>
+                            <p class="text-white-50">By unifying credential management and payment processing, 1Card
+                                streamlines campus operations, saving valuable time and resources.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="stat-card">
+                            <h3 class="display-4 fw-bold mb-3">95%</h3>
+                            <p class="fs-5 fw-semibold text-white mb-2">of Users Report a More Convenient Campus
+                                Experience</p>
+                            <p class="text-white-50">From canteen bills to parking, 1Card simplifies campus life with a
+                                single, all-in-one solution.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="stat-card">
+                            <h3 class="display-4 fw-bold mb-3">2.8M+</h3>
+                            <p class="fs-5 fw-semibold text-white mb-2">Secure ID Verifications Completed</p>
+                            <p class="text-white-50">Our system verifies identities across multiple campus facilities,
+                                ensuring safety and security for everyone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section-py bg-white">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 pb-4" style="max-width: 48rem;">
+                    <div class="tag">Financial Roadblocks</div>
+                    <h2 class="fw-semibold display-6 mb-3" style="color: var(--brand-blue-dark);">Struggling with
+                        Campus Finances?</h2>
+                    <p class="fs-5 text-secondary">We get it. 1Card streamlines the process of handling tuition
+                        payments, canteen bills, printing costs, and more so you can focus on your education, not your
+                        spreadsheets.</p>
+                </div>
+                <div class="row g-5 align-items-center mb-5 pb-5">
+                    <div class="col-lg-6">
+                        <div class="tag">Financial Management</div>
+                        <h3 class="fw-bold display-6 mb-3" style="color: var(--brand-blue-dark);">Expense Tracking</h3>
+                        <p class="text-secondary mb-4">Easily track, categorize, and analyze every campus
+                            transaction—tuition fees, canteen bills, printing costs, and more—all in real time, from one
+                            unified dashboard.</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center bg-light p-3 rounded-3"><i
+                                        class="ri-checkbox-circle-fill text-primary me-3 fs-5"></i><span
+                                        class="fw-medium">Real-Time Updates</span></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center bg-light p-3 rounded-3"><i
+                                        class="ri-checkbox-circle-fill text-primary me-3 fs-5"></i><span
+                                        class="fw-medium">Automatic Categorization</span></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center bg-light p-3 rounded-3"><i
+                                        class="ri-checkbox-circle-fill text-primary me-3 fs-5"></i><span
+                                        class="fw-medium">Unified Account View</span></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center bg-light p-3 rounded-3"><i
+                                        class="ri-checkbox-circle-fill text-primary me-3 fs-5"></i><span
+                                        class="fw-medium">Detailed Spending Insights</span></div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-dark shadow-sm">Read More About This</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center p-5 bg-info-subtle rounded-4">
+                            <img src="img/HomePage/rent.svg" alt="Expense Tracking"
+                                class="img-fluid rounded-3 shadow-xl">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5 align-items-center mb-5 pb-5">
+                    <div class="col-lg-6 order-lg-last">
+                        <div class="tag">Financial Management</div>
+                        <h3 class="fw-bold display-6 mb-3" style="color: var(--brand-blue-dark);">Seamless Service
+                            Integration</h3>
+                        <p class="text-secondary mb-4">Link all your campus services—such as canteen, gym, parking, and
+                            event management—under one system. With 1Card, you don’t need separate logins or payment
+                            methods for each service.</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center bg-light p-3 rounded-3"><i
+                                        class="ri-checkbox-circle-fill text-primary me-3 fs-5"></i><span
+                                        class="fw-medium">Canteen & Food Services</span></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center bg-light p-3 rounded-3"><i
+                                        class="ri-checkbox-circle-fill text-primary me-3 fs-5"></i><span
+                                        class="fw-medium">Printing & Photocopy</span></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center bg-light p-3 rounded-3"><i
+                                        class="ri-checkbox-circle-fill text-primary me-3 fs-5"></i><span
+                                        class="fw-medium">Parking & Access Control</span></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center bg-light p-3 rounded-3"><i
+                                        class="ri-checkbox-circle-fill text-primary me-3 fs-5"></i><span
+                                        class="fw-medium">Real-Time Synchronization</span></div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-dark shadow-sm">Read More About This</a>
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="d-flex justify-content-center align-items-center p-5 bg-info-subtle rounded-4">
+                            <img src="img/HomePage/budget.svg" alt="Seamless Service Integration"
+                                class="img-fluid rounded-3 shadow-xl">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="tag">Financial Management</div>
+                        <h3 class="fw-bold display-6 mb-3" style="color: var(--brand-blue-dark);">Flexible Payment
+                            Options</h3>
+                        <p class="text-secondary mb-4">Whether you’re recharging your 1Card balance or paying tuition,
+                            we offer a variety of convenient, cashless solutions to keep you moving on campus.</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center bg-light p-3 rounded-3"><i
+                                        class="ri-checkbox-circle-fill text-primary me-3 fs-5"></i><span
+                                        class="fw-medium">Top-Up Convenience</span></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center bg-light p-3 rounded-3"><i
+                                        class="ri-checkbox-circle-fill text-primary me-3 fs-5"></i><span
+                                        class="fw-medium">Credit-Based Services</span></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center bg-light p-3 rounded-3"><i
+                                        class="ri-checkbox-circle-fill text-primary me-3 fs-5"></i><span
+                                        class="fw-medium">Instant Payment Confirmation</span></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center bg-light p-3 rounded-3"><i
+                                        class="ri-checkbox-circle-fill text-primary me-3 fs-5"></i><span
+                                        class="fw-medium">Visual Spending Alerts</span></div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-dark shadow-sm">Read More About This</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center p-5 bg-info-subtle rounded-4">
+                            <img src="img/HomePage/rent.svg" alt="Flexible Payment Options"
+                                class="img-fluid rounded-3 shadow-xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="section-py bg-light">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width: 48rem;">
+                    <div class="tag">Smart Savings</div>
+                    <h2 class="fw-semibold display-5 mb-3" style="color: var(--brand-blue-dark);">Optimize Your Campus
+                        Journey</h2>
+                    <p class="fs-5 text-secondary">Whether it’s paying tuition or topping up your 1Card balance, we’ll
+                        help you get there faster.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm" style="transition: all 0.3s ease;">
+                            <div class="card-body p-4"><img src="img/HomePage/f2 (1).png"
+                                    class="card-img-top rounded-3 mb-4" alt="Tuition Fees Payment Service">
+                                <h3 class="card-title h5 fw-bold" style="color: var(--brand-blue-dark);">Tuition Fees
+                                    Payment Service</h3>
+                                <p class="card-text text-secondary">Set and manage all your campus fee targets in one
+                                    place. From tuition to library fines, stay on track with simple, intuitive
+                                    goal-setting.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm" style="transition: all 0.3s ease;">
+                            <div class="card-body p-4"><img src="img/HomePage/f2 (2).png"
+                                    class="card-img-top rounded-3 mb-4" alt="Smart Payment Options">
+                                <h3 class="card-title h5 fw-bold" style="color: var(--brand-blue-dark);">Smart Payment
+                                    Options</h3>
+                                <p class="card-text text-secondary">Enjoy flexible payment methods—DPAX, QR code, or
+                                    credit-based services—so you can choose what fits your routine best.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm" style="transition: all 0.3s ease;">
+                            <div class="card-body p-4"><img src="img/HomePage/f2 (3).png"
+                                    class="card-img-top rounded-3 mb-4" alt="Hassle-Free Top-Ups">
+                                <h3 class="card-title h5 fw-bold" style="color: var(--brand-blue-dark);">Hassle-Free
+                                    Top-Ups</h3>
+                                <p class="card-text text-secondary">Instantly recharge your 1Card from anywhere—no more
+                                    long queues or searching for spare change.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card h-100 border-0 shadow-sm" style="transition: all 0.3s ease;">
+                            <div class="card-body p-4"><img src="img/HomePage/f2 (4).png"
+                                    class="card-img-top rounded-3 mb-4" alt="Automated Fee Transfers">
+                                <h3 class="card-title h5 fw-bold" style="color: var(--brand-blue-dark);">Automated Fee
+                                    Transfers</h3>
+                                <p class="card-text text-secondary">Schedule recurring payments for tuition or other
+                                    regular fees. Focus on your studies, and let 1Card handle the deadlines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card h-100 border-0 shadow-sm" style="transition: all 0.3s ease;">
+                            <div class="card-body p-4"><img src="img/HomePage/f2 (3).png"
+                                    class="card-img-top rounded-3 mb-4" alt="Event & Access Management">
+                                <h3 class="card-title h5 fw-bold" style="color: var(--brand-blue-dark);">Event & Access
+                                    Management</h3>
+                                <p class="card-text text-secondary">Use 1Card for secure facility access, event
+                                    registrations, and parking management—all through a single, convenient system.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="section-py bg-white">
+            <div class="container">
+                <div class="text-center mx-auto" style="max-width: 48rem;">
+                    <div class="tag">How It Works</div>
+                </div>
+                <ul class="nav nav-pills justify-content-center bg-light p-2 rounded-4 mb-5" id="howItWorksTab"
+                    role="tablist" style="max-width: 48rem; margin-left: auto; margin-right: auto;">
+                    <li class="nav-item flex-fill" role="presentation"><button class="nav-link w-100 active"
+                            id="onboarding-tab" data-bs-toggle="tab" data-bs-target="#onboarding-tab-pane" type="button"
+                            role="tab" aria-controls="onboarding-tab-pane" aria-selected="true">Implementation &
+                            Onboarding</button></li>
+                    <li class="nav-item flex-fill" role="presentation"><button class="nav-link w-100"
+                            id="deployment-tab" data-bs-toggle="tab" data-bs-target="#deployment-tab-pane" type="button"
+                            role="tab" aria-controls="deployment-tab-pane" aria-selected="false">Deployment &
+                            Rollout</button></li>
+                    <li class="nav-item flex-fill" role="presentation"><button class="nav-link w-100"
+                            id="monitoring-tab" data-bs-toggle="tab" data-bs-target="#monitoring-tab-pane" type="button"
+                            role="tab" aria-controls="monitoring-tab-pane" aria-selected="false">Monitoring &
+                            Optimization</button></li>
+                </ul>
+                <div class="tab-content bg-light p-4 p-md-5 rounded-4" id="howItWorksTabContent">
+                    <div class="tab-pane fade show active" id="onboarding-tab-pane" role="tabpanel"
+                        aria-labelledby="onboarding-tab" tabindex="0">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6">
+                                <h3 class="fw-bold display-6 mb-3" style="color: var(--brand-blue-dark);">Implementation
+                                    & Onboarding</h3>
+                                <p class="text-secondary mb-4">Our team collaborates with your institution to set up the
+                                    1Card system, integrate existing services, and train staff.</p>
+                                <a href="#" class="btn btn-dark shadow-sm">Read More About This</a>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-center">
+                                <img src="img/HomePage/1.avif" alt="Implementation"
+                                    class="img-fluid rounded-4 shadow-xl" style="max-width: 400px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="deployment-tab-pane" role="tabpanel" aria-labelledby="deployment-tab"
+                        tabindex="0">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6">
+                                <h3 class="fw-bold display-6 mb-3" style="color: var(--brand-blue-dark);">Deployment &
+                                    Rollout</h3>
+                                <p class="text-secondary mb-4">We manage the entire deployment process, from card
+                                    issuance to mobile app setup, ensuring a seamless transition for students and staff.
+                                </p>
+                                <a href="#" class="btn btn-dark shadow-sm">Read More About This</a>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-center">
+                                <img src="img/HomePage/1.avif" alt="Deployment"
+                                    class="img-fluid rounded-4 shadow-xl" style="max-width: 400px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="monitoring-tab-pane" role="tabpanel" aria-labelledby="monitoring-tab"
+                        tabindex="0">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6">
+                                <h3 class="fw-bold display-6 mb-3" style="color: var(--brand-blue-dark);">Monitoring &
+                                    Optimization</h3>
+                                <p class="text-secondary mb-4">Post-launch, we provide continuous support, monitor
+                                    system performance, and work with you to optimize features based on user feedback.
+                                </p>
+                                <a href="#" class="btn btn-dark shadow-sm">Read More About This</a>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-center">
+                                <img src="img/HomePage/1.avif" alt="Monitoring"
+                                    class="img-fluid rounded-4 shadow-xl" style="max-width: 400px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section-py bg-light">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width: 48rem;">
+                    <div class="tag">Customer Experiences</div>
+                    <h2 class="fw-semibold display-5 mb-3" style="color: var(--brand-blue-dark);">How 1Card is Changing
+                        Lives</h2>
+                    <p class="fs-5 text-secondary">Read real stories of how 1Card has helped users improve their
+                        financial health and reach their goals.</p>
+                </div>
+                <div class="testimonials-card p-4 p-md-5 mx-auto" style="max-width: 60rem;">
+                    <div class="overlay-bg"></div>
+                    <div id="testimonialCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active">
+                                <img src="https://picsum.photos/seed/avatar1/80/80" alt="Sarah Johnson"
+                                    class="rounded-circle mx-auto mb-4 border-4"
+                                    style="border-color: var(--brand-yellow) !important;">
+                                <p class="fs-5 fst-italic mb-4">"1Card has revolutionized how I manage my campus
+                                    expenses. From dining to textbooks, everything is seamlessly integrated. It's like
+                                    having a financial assistant in my pocket!"</p>
+                                <p class="fw-bold fs-5 mb-0">Sarah Johnson</p>
+                                <p style="color: var(--brand-yellow);">College Student</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/seed/avatar2/80/80" alt="Michael Chen"
+                                    class="rounded-circle mx-auto mb-4 border-4"
+                                    style="border-color: var(--brand-yellow) !important;">
+                                <p class="fs-5 fst-italic mb-4">"As an administrator, implementing 1Card was the best
+                                    decision we've made. It streamlined our operations, reduced paperwork, and gave us
+                                    valuable insights into campus spending."</p>
+                                <p class="fw-bold fs-5 mb-0">Michael Chen</p>
+                                <p style="color: var(--brand-yellow);">University Administrator</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/seed/avatar3/80/80" alt="Emily Rodriguez"
+                                    class="rounded-circle mx-auto mb-4 border-4"
+                                    style="border-color: var(--brand-yellow) !important;">
+                                <p class="fs-5 fst-italic mb-4">"The security and convenience are top-notch. I no longer
+                                    worry about carrying cash or multiple cards. Accessing the gym, library, and paying
+                                    for meals is all done with a single tap."</p>
+                                <p class="fw-bold fs-5 mb-0">Emily Rodriguez</p>
+                                <p style="color: var(--brand-yellow);">Graduate Student</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                            data-bs-slide="prev"><span class="carousel-control-prev-icon"
+                                aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                            data-bs-slide="next"><span class="carousel-control-next-icon"
+                                aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section-py bg-white">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <div class="tag">FAQ</div>
+                        <h2 class="fw-semibold display-6 mb-3" style="color: var(--brand-blue-dark);">Common Questions
+                            & Answers</h2>
+                        <p class="text-secondary mb-4">Here’s everything you need to know about 1Card, from features to
+                            getting started.</p>
+                        <p class="text-secondary fw-medium mb-4">Got any specific questions?</p>
+                        <a href="#" class="btn btn-dark shadow-sm">Contact Us</a>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item border-0 border-bottom">
+                                <h2 class="accordion-header"><button
+                                        class="accordion-button collapsed bg-transparent fs-5 fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq-1">How do I link my
+                                        bank accounts to 1Card?<span class="ms-auto"><i
+                                                class="accordion-icon ri-add-line"></i><i
+                                                class="accordion-icon ri-subtract-line text-primary"></i></span></button>
+                                </h2>
+                                <div id="faq-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary">You can securely link your bank account
+                                        through our mobile app in the 'Payment Methods' section. We use Plaid for secure
+                                        connections, ensuring your data is always encrypted and protected.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 border-bottom">
+                                <h2 class="accordion-header"><button
+                                        class="accordion-button collapsed bg-transparent fs-5 fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq-2">How secure is
+                                        1Card's system?<span class="ms-auto"><i
+                                                class="accordion-icon ri-add-line"></i><i
+                                                class="accordion-icon ri-subtract-line text-primary"></i></span></button>
+                                </h2>
+                                <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary">Security is our top priority. We use
+                                        end-to-end encryption, two-factor authentication, and comply with
+                                        industry-leading security standards to protect your account and personal
+                                        information.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 border-bottom">
+                                <h2 class="accordion-header"><button
+                                        class="accordion-button collapsed bg-transparent fs-5 fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq-3">Can 1Card
+                                        integrate with our existing campus systems?<span class="ms-auto"><i
+                                                class="accordion-icon ri-add-line"></i><i
+                                                class="accordion-icon ri-subtract-line text-primary"></i></span></button>
+                                </h2>
+                                <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary">Absolutely. Our platform is designed for
+                                        flexibility and can integrate with a wide range of existing campus management
+                                        systems, including library, parking, and student information systems.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 border-bottom">
+                                <h2 class="accordion-header"><button
+                                        class="accordion-button collapsed bg-transparent fs-5 fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq-4">What happens if
+                                        a student or staff member loses their card?<span class="ms-auto"><i
+                                                class="accordion-icon ri-add-line"></i><i
+                                                class="accordion-icon ri-subtract-line text-primary"></i></span></button>
+                                </h2>
+                                <div id="faq-4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary">The card can be immediately frozen
+                                        through the 1Card mobile app or web portal to prevent unauthorized use. A
+                                        replacement card can then be issued by the campus administration.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header"><button
+                                        class="accordion-button collapsed bg-transparent fs-5 fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq-5">How can users
+                                        top up or recharge their 1Card balance?<span class="ms-auto"><i
+                                                class="accordion-icon ri-add-line"></i><i
+                                                class="accordion-icon ri-subtract-line text-primary"></i></span></button>
+                                </h2>
+                                <div id="faq-5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-secondary">Users can add funds instantly through the
+                                        app using a linked bank account, debit/credit card, or at designated top-up
+                                        kiosks located across the campus.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section class="download-section bg-light">
+            <div class="container">
+                <div class="card-bg position-relative">
+                    <div class="overlay-bg"></div>
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                    <div class="row g-5 align-items-center position-relative">
+                        <div class="col-lg-6 d-flex justify-content-center">
+                            <img src="img/HomePage/Mobile.avif" alt="1Card App on phone"
+                                class="img-fluid"
+                                style="max-width: 500px;">
+                        </div>
+                        <div class="col-lg-6 text-white text-center text-lg-start px-5 py-4 px-md-0 py-md-0">
+                            <h2 class="fw-bold display-4 mb-3">Download the 1Card Mobile App</h2>
+                            <p class="fs-5 text-white-50 mb-4 mx-auto mx-lg-0" style="max-width: 32rem;">Manage your
+                                campus finances on the go. Get real-time transaction updates, tap-to-pay features, and
+                                secure ID verification—all in one convenient app.</p>
+                            <div
+                                class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                                <a href="#"
+                                    class="btn bg-white text-dark d-flex align-items-center justify-content-center"><i
+                                        class="ri-apple-fill me-2 fs-4"></i>App Store</a>
+                                <a href="#"
+                                    class="btn bg-white text-dark d-flex align-items-center justify-content-center"><i
+                                        class="ri-google-play-fill me-2 fs-4"></i>Google Play</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="section-py bg-white">
+            <div class="container">
+                <div class="text-center mx-auto mb-5" style="max-width: 48rem;">
+                    <div class="tag">Blog Articles</div>
+                    <h2 class="fw-semibold display-4 mb-3" style="color: var(--brand-blue-dark);">The 1Card Insight Hub
+                    </h2>
+                    <p class="fs-5 text-secondary">Stay updated with the latest trends and innovations transforming
+                        campus operations. Gain expert insights and success stories to empower your institution's
+                        digital journey.</p>
+                </div>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6 col-lg-4"><a href="#"
+                            class="card blog-card h-100 border-0 text-decoration-none">
+                            <div class="card-img-top-wrapper"><img src="img/HomePage/blog-img.avif"
+                                    class="card-img-top" alt="Blog 1"></div>
+                            <div class="card-body px-0">
+                                <h3 class="card-title h5 fw-bold mb-2" style="color: var(--brand-blue-dark);">The Future
+                                    of Campus Management</h3>
+                                <p class="card-text text-secondary">Oct 11, 2024</p>
+                            </div>
+                        </a></div>
+                    <div class="col-md-6 col-lg-4"><a href="#"
+                            class="card blog-card h-100 border-0 text-decoration-none">
+                            <div class="card-img-top-wrapper"><img src="img/HomePage/blog-img.avif"
+                                    class="card-img-top" alt="Blog 2"></div>
+                            <div class="card-body px-0">
+                                <h3 class="card-title h5 fw-bold mb-2" style="color: var(--brand-blue-dark);">How to
+                                    Manage Irregular Income with AI-Powered Financial Tools</h3>
+                                <p class="card-text text-secondary">Oct 10, 2024</p>
+                            </div>
+                        </a></div>
+                    <div class="col-md-6 col-lg-4"><a href="#"
+                            class="card blog-card h-100 border-0 text-decoration-none">
+                            <div class="card-img-top-wrapper"><img src="img/HomePage/blog-img.avif"
+                                    class="card-img-top" alt="Blog 3"></div>
+                            <div class="card-body px-0">
+                                <h3 class="card-title h5 fw-bold mb-2" style="color: var(--brand-blue-dark);">How AI Can
+                                    Help You Create Custom Budgets Tailored to Your Needs</h3>
+                                <p class="card-text text-secondary">Oct 9, 2024</p>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="btn btn-dark shadow-lg">View All Articles</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="img/logo.png" alt="1Card Logo"
+                            width="60">
+                    </div>
+                    <p class="text-secondary mb-3">Address: 64/3 Lake Circus, Kalabagan Dhaka-1205, Bangladesh</p>
+                    <p class="text-secondary mb-2">saddam@daffodil-bd.com</p>
+                    <p class="text-secondary mb-4">+880 1758 411 337</p>
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" class="text-secondary"><i class="ri-facebook-box-fill"></i></a>
+                        <a href="#" class="text-secondary"><i class="ri-twitter-x-fill"></i></a>
+                        <a href="#" class="text-secondary"><i class="ri-linkedin-box-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h3 class="fw-bold fs-6 mb-4" style="color: var(--brand-blue-dark);">MENU</h3>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="#" class="text-decoration-none text-secondary">Home</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Features</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Pricing</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Blog</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h3 class="fw-bold fs-6 mb-4" style="color: var(--brand-blue-dark);">USEFUL</h3>
+                    <ul class="list-unstyled d-grid gap-2">
+                        <li><a href="#" class="text-decoration-none text-secondary">Privacy Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Cookie Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Terms of Service</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h3 class="fw-bold fs-6 mb-4" style="color: var(--brand-blue-dark);">DOWNLOAD APP</h3>
+                    <p class="text-secondary mb-3">Manage your 1Card mobile app. Download it today for easy expense
+                        tracking and customized alerts.</p>
+                    <div class="d-grid gap-3">
+                        <a href="#" class="btn btn-dark w-100"><i class="ri-apple-fill me-2"></i>App Store</a>
+                        <a href="#" class="btn btn-dark w-100"><i class="ri-google-play-fill me-2"></i>Google Play</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-secondary border-top pt-4">
+                &copy; 2025 made by Daffodil Web
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="btn btn-primary rounded-circle p-2 shadow-lg" style="width: 48px; height: 48px;"
+        aria-label="Go to top">
+        <i class="ri-arrow-up-s-line fs-4"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script>
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>

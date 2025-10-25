@@ -1,0 +1,316 @@
+:root {
+  --bs-font-sans-serif: "Inter", sans-serif;
+  --brand-blue: #0a4d9a;
+  --brand-blue-dark: #0f2148;
+  --brand-yellow: #fbbf24;
+  --bs-primary: var(--brand-blue);
+  --bs-primary-rgb: 10, 77, 154;
+  --bs-dark: var(--brand-blue-dark);
+  --bs-dark-rgb: 15, 33, 72;
+}
+
+body {
+  color: #4b5563; /* text-gray-700 */
+}
+
+.fw-extrabold {
+  font-weight: 800;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-dark {
+  background-color: var(--brand-blue-dark);
+  border-color: var(--brand-blue-dark);
+}
+
+.btn-dark:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+.section-py {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #fef3c7; /* bg-yellow-100 */
+  color: #92400e; /* text-yellow-800 */
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+
+/* Header */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.offcanvas {
+  background-color: var(--brand-blue-dark);
+  color: white;
+}
+.offcanvas .nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.offcanvas .nav-link:hover,
+.offcanvas .nav-link.active {
+  color: white;
+}
+.offcanvas .dropdown-menu {
+  background-color: transparent;
+  border: none;
+}
+.offcanvas .dropdown-item {
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 2rem;
+}
+.offcanvas .dropdown-item:hover {
+  color: white;
+  background-color: transparent;
+}
+.offcanvas-header .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+.btn-close:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.navbar-nav li {
+  margin: 0px 20px !important;
+}
+
+.dropdown-item {
+  margin-bottom: 10px;
+}
+/* Hoverable Dropdown on Desktop */
+@media (min-width: 992px) {
+  .navbar .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    animation: fadeIn 0.3s ease forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.mainSection {
+  padding-top: 80px;
+}
+/* Hero */
+.hero-section {
+  background-color: #f9fafb; /* bg-gray-50 */
+  background-image: radial-gradient(#d4d4d8 1px, transparent 1px);
+  background-size: 20px 20px;
+  padding-top: 80px;
+}
+
+/* Partners */
+.partners-container {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 128px,
+    black calc(100% - 200px),
+    transparent 100%
+  );
+}
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-infinite-scroll {
+  animation: infinite-scroll 40s linear infinite;
+}
+
+/* Results */
+.results-section {
+  background-color: var(--brand-blue-dark);
+  position: relative;
+  color: white;
+}
+.results-section .overlay-bg {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.1;
+}
+.stat-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.stat-card .h3 {
+  color: var(--brand-yellow);
+}
+
+/* Testimonials */
+.testimonials-card {
+  background-color: var(--brand-blue-dark);
+  position: relative;
+  color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+}
+.testimonials-card .overlay-bg {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.1;
+  border-radius: 1.5rem;
+}
+.testimonials-card .carousel-control-prev,
+.testimonials-card .carousel-control-next {
+  width: 3rem;
+  height: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  opacity: 1;
+}
+.testimonials-card .carousel-control-prev:hover,
+.testimonials-card .carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* FAQ Accordion */
+.accordion-button:not(.collapsed) {
+  color: var(--brand-blue-dark);
+  background-color: #f9fafb;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+.accordion-button::after {
+  display: none; /* Hide default icon */
+}
+.accordion-icon {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+.accordion-button:not(.collapsed) .ri-subtract-line {
+  display: block;
+}
+.accordion-button:not(.collapsed) .ri-add-line {
+  display: none;
+}
+.accordion-button.collapsed .ri-subtract-line {
+  display: none;
+}
+.accordion-button.collapsed .ri-add-line {
+  display: block;
+  color: #6b7280;
+}
+
+/* Download */
+.download-section .card-bg {
+  background-color: var(--brand-blue-dark);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.download-section .overlay-bg {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.1;
+  border-radius: 1.5rem;
+}
+.download-section .circle-1 {
+  position: absolute;
+  bottom: -5rem;
+  right: -5rem;
+  width: 16rem;
+  height: 16rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+.download-section .circle-2 {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  width: 8rem;
+  height: 8rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+/* Blog */
+.blog-card {
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+.blog-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+}
+.blog-card .card-img-top-wrapper {
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+.blog-card .card-img-top {
+  transition: transform 0.3s ease;
+}
+.blog-card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+/* Scroll To Top */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1030;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+#scrollToTopBtn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fst-italic {
+  max-width: 600px;
+  margin: 0 auto;
+}
